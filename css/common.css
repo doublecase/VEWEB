@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+.row { max-width: 1700px; margin: 0 auto;}
+
+#header {
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+#header .nav {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    background: transparent;
+    padding: 20px 60px 0;
+}
+#header.on { 
+    position: fixed;
+    background: #fff;
+    color: #000;
+    box-shadow: 0 2px 5px #ddd;
+    z-index: 9999;
+}
+#header .navbar {
+    position: relative;
+    height: 60px;
+}
+#header .navbar .depth1 {
+    position: absolute;
+    top: 10px;
+    left: 50%; 
+    transform: translate(-50%);
+}
+#header .navbar .depth1 > li {
+    display: inline-block;
+}
+#header .navbar .depth1 > li a {
+    padding: 25px ;
+} 
+.depth1 > li > a:hover {
+    color: #7c89e5;
+}
+#header .logo a img:nth-child(2){
+    display:none;
+}
+#header.on .logo a img:nth-child(2){
+    display:inline-block;
+}
+#header.on .logo a img:nth-child(1){
+    display:none;
+}
+#header .join {
+    position: absolute;
+    right: 60px;
+    top: 10px;
+}
+#header .join span:last-child {
+    margin-left: 10px;
+}
+#header .join a:hover {
+    color: #7c89e5;
+}
+
+/* depth2 */
+.depth1 > li {
+    position: relative;
+}
+.depth2 {
+    font-size: 14px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: none;
+    z-index: 999;
+}
+.depth2 li {
+    width: 200px;
+    height: auto;
+    background: #7c89e5;
+    padding: 20px 0;
+}
+.depth2 > li:hover {
+    color:rgba(0, 0, 0, 0.5)
+}
+.depth1 > li:hover .depth2 {
+    display: block;
+}
+
+/* footer */
+.footer {
+    background: url(../images/bg_footer.png) no-repeat center;
+    background-size: cover;
+    padding: 90px 270px;
+}
+.footer h2 {
+    font-size: 55px;
+}
+.footer span {
+    color: #b12121;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 25px 50px 50px 0;
+    display: inline-block;
+}
+.footer table {
+    width: 50%;
+    line-height: 1.5;
+}
+.footer table td:first-child {
+    font-size: 18px;
+    font-weight: 500;
+    width: 30%;
+}
+.footer table td:last-child {
+    color: #757575;
+}
+.footer p {
+    text-align: right;
+    font-size: 20px;
+    color: #6f6f6f;
+    padding-top: 20px;
+}

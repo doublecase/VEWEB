@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+legend { display:none }
+.row { max-width: 1200px;}
+
+#header {
+    color: #000;
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+#header .nav {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    background: transparent;
+    padding: 20px 60px 0;
+}
+
+
+
+.joinBox { padding-top:80px; padding-bottom:80px }
+.joinBox h2 { font-size:30px; padding:40px 0 }
+.joinBox h3 { font-size:18px; padding:20px 0 }
+
+.joinBox .agree { background:#eee; padding:20px;  }
+.joinBox .agree > div { background:#fff;
+    height:100px; overflow-y:auto;
+    line-height:1.5; padding:10px; 
+    margin-bottom:10px; 
+}
+.joinBox .agree input { margin-left:10px; }
+.joinBox .btn { text-align:center }
+.joinBox .btn button { width:100px; height:40px;  
+    border:none; background:red; 
+    margin:30px 10px; border-radius:8px;  
+    color:#fff; font-size:20px; 
+    cursor:pointer;
+}
+.joinBox .btn button[type='submit'] {
+    background:#000
+}
+
+.joinBox table { margin-bottom:30px }
+.joinBox col:nth-child(1) {
+    width:20%; background:#eee }
+.joinBox col:nth-child(2) {
+    width:80%; }
+.joinBox th,
+.joinBox td { border:1px solid #ddd;
+    padding:10px; text-align:left; 
+    vertical-align:middle;
+}    
+
+.joinBox input[type='text'],
+.joinBox input[type='password'],
+.joinBox select { height:30px; border:1px solid #ddd; 
+    text-indent:1em; vertical-align:middle }   
+.joinBox select { text-indent:0em; }       
+.joinBox textarea { 
+    width:80%; height:100px; 
+    border:1px solid #ddd; 
+    padding:10px; 
+}
+.joinBox #idbox,
+.joinBox #pwbox,
+.joinBox #irum,
+.joinBox #emailid,
+.joinBox #emaildomain { width:200px }
+.joinBox #zipcode,
+.joinBox #hp1,
+.joinBox #hp2,
+.joinBox #birth { width:100px }
+.joinBox #addr1,
+.joinBox #addr2,
+.joinBox #addr3 { width:35%}
+.joinBox #zipcode + button { height:30px; vertical-align:middle  }
+.joinBox td label { margin-right:10px  }
+.joinBox .agree span, 
+.joinBox .agree input,
+.joinBox .agree label { vertical-align:middle} 
+
+/* footer */
+.footer {
+    background: url(../images/bg_footer.png) no-repeat center;
+    background-size: cover;
+    padding: 90px 270px;
+}
+.footer h2 {
+    font-size: 55px;
+}
+.footer span {
+    color: #b12121;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 25px 50px 50px 0;
+    display: inline-block;
+}
+.footer table {
+    width: 50%;
+    line-height: 1.5;
+}
+.footer table td:first-child {
+    font-size: 18px;
+    font-weight: 500;
+    width: 30%;
+}
+.footer table td:last-child {
+    color: #757575;
+}
+.footer p {
+    text-align: right;
+    font-size: 20px;
+    color: #6f6f6f;
+    padding-top: 20px;
+}
